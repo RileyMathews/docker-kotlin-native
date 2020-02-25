@@ -7,6 +7,9 @@ RUN yum -y update && yum -y install \
     gzip \
     tar \
     ncurses-compat-libs \
+    clang \
+    gcc \
+    libffi \
     yum clean \
     && \
     # install kotlin compiler
