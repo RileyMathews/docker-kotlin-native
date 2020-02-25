@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+docker build -t docker-kotlin-native-validate .
+docker run --rm -v `pwd`:/code docker-kotlin-native-validate /bin/bash -c "gradle nativeBinaries && ./build/bin/native/releaseExecutable/code.kexe"
