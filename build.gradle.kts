@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.3.21"
+    kotlin("multiplatform") version "1.4.0"
 }
 
 repositories {
@@ -12,9 +12,4 @@ kotlin {
       executable()
     }
   }
-}
-
-tasks.withType<Wrapper> {
-  gradleVersion = "5.3.1"
-  distributionType = Wrapper.DistributionType.ALL
 }
